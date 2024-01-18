@@ -6,7 +6,6 @@ import time
 assistant_id ='asst_4KJkQ5Kh2g0gGdO44erxMv0k'
 thread_id = ""
 
-
 with st.sidebar:
     st.header("미토콘드리아 AiXpert Ver.1.0 ")
     st.subheader("GPT 4/ assitant", divider = "rainbow")
@@ -21,8 +20,7 @@ with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
 
-    client = OpenAI(api_key=openai_api_key)
-    
+    client = OpenAI(api_key=openai_api_key)  
 #    thread = client.beta.threads.create()
 #    thread_id = thread.id
     thread_id ="thread_CNDqQBZr0Dm9tZmbkXAglXna"
